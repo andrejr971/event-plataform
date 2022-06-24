@@ -1,12 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.tsx",
-  ],
+  content: ['./src/**/*.tsx'],
   theme: {
     extend: {
       fontFamily: {
         sans: 'Robot, sans-serif',
+      },
+      backgroundImage: {
+        blur: 'url(/src/assets/background.png)',
+        icon: 'url(/src/assets/icon.svg)',
       },
       colors: {
         green: {
@@ -30,10 +32,10 @@ module.exports = {
           500: '#323238',
           600: '#29292E',
           700: '#121214',
-          900: '#09090A'
-        }
+          900: '#09090A',
+        },
       },
     },
   },
   plugins: [],
-}
+};
