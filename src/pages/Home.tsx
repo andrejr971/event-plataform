@@ -1,8 +1,7 @@
-import { useMutation } from '@apollo/client';
 import { FormEvent, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Logo } from '../components/Logo';
-import { CREATE_SUBSCRIBE_MUTATION } from '../graphql/mutation/subscriber';
+import { useCreateSubscriberMutation } from '../graphql/generated';
 
 type IValues = {
   name: string;
@@ -23,9 +22,7 @@ export function Home() {
     setValues(data);
   }
 
-  const [createSubscriber, { loading }] = useMutation(
-    CREATE_SUBSCRIBE_MUTATION,
-  );
+  const [createSubscriber, { loading }] = useCreateSubscriberMutation();
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
