@@ -8,6 +8,8 @@ type IValues = {
   email: string;
 };
 
+import CodeMockup from '/src/assets/code-mockup.png';
+
 export function Home() {
   const [values, setValues] = useState<IValues>({
     name: '',
@@ -88,7 +90,7 @@ export function Home() {
           </form>
         </div>
       </div>
-      <img src="/src/assets/code-mockup.png" className="mt-10" alt="code" />
+      <img src={CodeMockup} className="mt-10" alt="code" />
     </div>
   );
 }
