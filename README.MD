@@ -30,8 +30,6 @@
 </h1>
 <br />
 
-Application developed in the second edition of ignite-lab - @Rocketseat. Event Platform.
-
 ## :rocket: Tecnologias
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
